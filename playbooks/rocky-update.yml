@@ -1,0 +1,7 @@
+hosts: localhost
+become: yes
+tasks:
+        - name: update
+          ansible.builtin.dnf:
+                  name: "*"
+                  state: latest
